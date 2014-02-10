@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ff495a" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="相册"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@drawable/text_while"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:horizontalSpacing="8dp"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:verticalSpacing="8dp" 
+            android:layout_marginTop="68dp"
+        	android:layout_marginBottom="68dp">
+        </GridView>
+
+	<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ff495a" 
+        android:layout_alignParentBottom="true">
+        <Button
+			android:id="@+id/bt" 
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="#ff495a"
+			android:textColor="@drawable/text_while"
+			android:textSize="20sp"
+			android:text="完成" 
+			android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>
